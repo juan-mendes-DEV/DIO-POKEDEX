@@ -5,6 +5,54 @@
     font-family: 'Roboto Slab', serif;
     /* font-family: 'Silkscreen', sans-serif; */
 }
+body{
+    background-color: black;
+}
+.cabecalho{
+    padding: 20px;
+    background-image: linear-gradient(black,rgba(0, 15, 83, 0.671));
+}
+.rodape{
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 15, 83, 0.671),black);
+    text-align: center;
+    
+}
+.rodape a{
+    text-decoration: none;
+    color: rgb(245, 244, 255);
+}
+
+.neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #f2f1ff, 0 0 3vw #e1e9ff, 0 0 10vw #eceeff, 0 0 10vw #d9dcff, 0 0 .4vw #000000, .5vw .5vw .1vw #000000;
+      color: #050503;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #0400ff, 0 0 1.5vw #001986, 0 0 5vw #00218b, 0 0 5vw #002792, 0 0 .2vw #000000, .5vw .5vw .1vw #000000;
+      color: #000000;
+    }
+  }
+  
+.logo{
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.div-logo{
+    display: flex;
+}
+.logo-img{
+    width: 200px;
+    height: 50px;
+}
 section{
     padding-bottom: 30px;
 }
@@ -35,6 +83,8 @@ section{
     background-image: url(../img/fundoo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 .pokemon_list_three{
     display: flex;
